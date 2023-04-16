@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        height: 100vh;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        width: 40%;
+        max-width: 500px;
+        min-width: 300px;
+      }
+      
+      input[type="text"],
+      input[type="password"],
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      input[type="submit"] {
+        background-color: #6a11cb;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <form>
+      <h1>Login</h1>
+      <label for="role">Login as:</label>
+      <select id="role" name="role">
+        <option value="admin">Admin</option>
+        <option value="employee">Employee</option>
+      </select><br><br>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <input type="submit" value="Submit">
+    </form> 
+    
+    <script>
+      const form = document.querySelector('form');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault(); // prevent the form from submitting
+        
+        const role = document.getElementById('role').value;
+        if (role === 'admin') {
+          window.location.href = 'admin.html'; // redirect to admin.html
+        } else if (role === 'employee') {
+          window.location.href = 'employee.html'; // redirect to employee.html
+        }
+      });
+    </script>
+  </body>
+</html>

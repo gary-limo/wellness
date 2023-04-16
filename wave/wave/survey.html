@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nurses Survey</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        height: 100vh;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      h1, h2, p {
+        color: #fff;
+        text-align: center;
+      }
+      
+      form {
+        background-color: #fff;
+        color: #333;
+        width: 70%;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      
+      form p strong {
+  color: #000;
+}
+
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      button[type="submit"] {
+        display: block;
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #2575fc;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #6a11cb;
+      }
+      
+      p:first-child {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nurses Survey</h1>
+    <p>Please answer the following questions:</p>
+    
+    <form>
+      <p><strong>1. How frequently do you encounter staff shortages during your shifts?</strong></p>
+      <label>
+        <input type="radio" name="staff-shortages" value="always"> Always
+      </label>
+      <label>
+        <input type="radio" name="staff-shortages" value="often"> Often
+      </label>
+      <label>
+        <input type="radio" name="staff-shortages" value="sometimes"> Sometimes
+      </label>
+      <label>
+        <input type="radio" name="staff-shortages" value="rarely"> Rarely
+      </label>
+      <label>
+        <input type="radio" name="staff-shortages" value="never"> Never
+      </label>
+      
+      <p><strong>2. Do you feel that you have adequate time to spend with each patient to provide high-quality care?</strong></p>
+      <label>
+        <input type="radio" name="adequate-time" value="yes"> Yes
+      </label>
+      <label>
+        <input type="radio" name="adequate-time" value="no"> No
+      </label>
+      <label>
+        <input type="radio" name="adequate-time" value="sometimes"> Sometimes
+      </label>
+      
+      <p><strong>3. Have you received any training on coping with the emotional demands of your job?</strong></p>
+      <label>
+        <input type="radio" name="emotional-demands" value="yes"> Yes
+      </label>
+      <label>
+        <input type="radio" name="emotional-demands" value="no"> No
+      </label>
+      <label>
+        <input type="radio" name="emotional-demands" value="unsure"> Unsure
+      </label>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
