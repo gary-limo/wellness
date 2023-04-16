@@ -1,1 +1,1 @@
-<?php include_once("wave/index.html"); ?>
+<?php include_once("wave/wave/index.html"); ?>
